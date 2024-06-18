@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+
+  postgresPrime:
+     image: 'postgres:13.8-alpine'
+     container_name: postgresPrime
+     restart: always
+     environment:
+         - POSTGRES_DB=prime_db
+         - POSTGRES_USER=postgres
+         - POSTGRES_PASSWORD=password
+     volumes:
+         - db:/var/lib/postgresql/data postgres
+     ports:
+          - "5431:5432"
+
+
+volumes:
+  db:
