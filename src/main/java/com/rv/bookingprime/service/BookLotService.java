@@ -1,6 +1,5 @@
 package com.rv.bookingprime.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.rv.bookingprime.dto.BookLotRequest;
 import com.rv.bookingprime.entity.BookLot;
 import com.rv.bookingprime.entity.Lot;

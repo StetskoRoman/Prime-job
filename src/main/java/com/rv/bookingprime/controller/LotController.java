@@ -32,7 +32,7 @@ public class LotController {
     }
 
     @PutMapping("/addLot")
-    public ResponseEntity<String> addBook(@RequestBody BookLotRequest bookLotRequest) throws JsonProcessingException {
+    public ResponseEntity<String> addBook(@RequestBody BookLotRequest bookLotRequest) {
         log.info("addBook in controller");
 
         return new ResponseEntity<>(bookLotService.addBookLot(bookLotRequest), HttpStatus.OK);
